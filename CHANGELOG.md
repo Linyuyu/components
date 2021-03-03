@@ -1,5 +1,62 @@
 # @primer/components
 
+## 24.0.0
+
+### Major Changes
+
+- [`b9d9d245`](https://github.com/primer/components/commit/b9d9d2450c3f726fa0e6bc8cb43ba678df0c60ad) [#1068](https://github.com/primer/components/pull/1068) Thanks [@colebemis](https://github.com/colebemis)! - Remove propTypes in favor of TypeScript types
+
+* [`beef075e`](https://github.com/primer/components/commit/beef075e0274396b77887adf0b912583fe564b3f) [#1094](https://github.com/primer/components/pull/1094) Thanks [@colebemis](https://github.com/colebemis)! - Components no longer have a default `theme` prop. To ensure components still render correctly, you'll need pass the Primer theme to a [styled-components](https://styled-components.com/) `<ThemeProvider>` at the root of your application:
+
+  ```jsx
+  import {ThemeProvider} from 'styled-components'
+  import {theme} from '@primer/components'
+
+  funciton App(props) {
+    return (
+      <div>
+        <ThemeProvider theme={theme}>
+          <div>your app here</div>
+        </ThemeProvider>
+      </div>
+    )
+  }
+  ```
+
+### Patch Changes
+
+- [`fa106ea9`](https://github.com/primer/components/commit/fa106ea9a43a8451efb648d1e3ec9df87577379c) [#1090](https://github.com/primer/components/pull/1090) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in BaseStyles
+
+* [`fa106ea9`](https://github.com/primer/components/commit/fa106ea9a43a8451efb648d1e3ec9df87577379c) [#1090](https://github.com/primer/components/pull/1090) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in BranchName
+
+- [`e93cf268`](https://github.com/primer/components/commit/e93cf268b9b8b25fee535dc4aa7d31c0b015d420) [#1092](https://github.com/primer/components/pull/1092) Thanks [@bscofield](https://github.com/bscofield)! - Use functional color variables in Caret, CircleBadge, Pagehead, ProgressBar, and Popover
+
+* [`f2c57794`](https://github.com/primer/components/commit/f2c57794dc8163eda974d37a4fbb939b631c82cc) [#1085](https://github.com/primer/components/pull/1085) Thanks [@VanAnderson](https://github.com/VanAnderson)! - Use functional color variables in SideNav
+
+- [`6b2dc95f`](https://github.com/primer/components/commit/6b2dc95f2b3e250e130ff7e36d18eda3cda94b4a) [#1085](https://github.com/primer/components/pull/1085) Thanks [@VanAnderson](https://github.com/VanAnderson)! - Use functional color variables in TabNav
+
+* [`51d180ac`](https://github.com/primer/components/commit/51d180ace3562569910a80557904f138677b3262) [#1089](https://github.com/primer/components/pull/1089) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in Timeline
+
+- [`51d180ac`](https://github.com/primer/components/commit/51d180ace3562569910a80557904f138677b3262) [#1089](https://github.com/primer/components/pull/1089) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in TextInput
+
+* [`51d180ac`](https://github.com/primer/components/commit/51d180ace3562569910a80557904f138677b3262) [#1089](https://github.com/primer/components/pull/1089) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in Link
+
+- [`fa106ea9`](https://github.com/primer/components/commit/fa106ea9a43a8451efb648d1e3ec9df87577379c) [#1090](https://github.com/primer/components/pull/1090) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in BorderBox
+
+* [`51d180ac`](https://github.com/primer/components/commit/51d180ace3562569910a80557904f138677b3262) [#1089](https://github.com/primer/components/pull/1089) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in Tooltip
+
+- [`51d180ac`](https://github.com/primer/components/commit/51d180ace3562569910a80557904f138677b3262) [#1089](https://github.com/primer/components/pull/1089) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in UnderlineNav
+
+* [`44aa68e2`](https://github.com/primer/components/commit/44aa68e2e725bdb2a3be349d7bec3e18b3f17809) [#1101](https://github.com/primer/components/pull/1101) Thanks [@emplums](https://github.com/emplums)! - Forwards aria-label to correct component
+
+- [`c44ee363`](https://github.com/primer/components/commit/c44ee363e9d663b873ea721e42dac8e5366ebcd1) [#1085](https://github.com/primer/components/pull/1085) Thanks [@VanAnderson](https://github.com/VanAnderson)! - Use functional color variables in SubNav
+
+* [`fa106ea9`](https://github.com/primer/components/commit/fa106ea9a43a8451efb648d1e3ec9df87577379c) [#1090](https://github.com/primer/components/pull/1090) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in AvatarPair
+
+- [`fa106ea9`](https://github.com/primer/components/commit/fa106ea9a43a8451efb648d1e3ec9df87577379c) [#1090](https://github.com/primer/components/pull/1090) Thanks [@colebemis](https://github.com/colebemis)! - Use functional color variables in AvatarStack
+
+* [`4e19045e`](https://github.com/primer/components/commit/4e19045ec1ca46ece0c029a193ed1863a8994030) [#1085](https://github.com/primer/components/pull/1085) Thanks [@VanAnderson](https://github.com/VanAnderson)! - Use functional color variables in StateLabel
+
 ## 23.2.1
 
 ### Patch Changes
