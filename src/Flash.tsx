@@ -17,7 +17,7 @@ const variants = variant({
     default: {
       color: 'alert.info.text',
       backgroundColor: 'alert.info.bg',
-      borderColor: 'alert.success.border'
+      borderColor: 'alert.info.border'
     },
     success: {
       color: 'alert.success.text',
